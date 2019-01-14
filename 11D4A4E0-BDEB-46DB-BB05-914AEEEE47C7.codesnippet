@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>CustomCell</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>- (void)initialization {
+    
+}
+
+- (void)setSelected:(BOOL)selected animated:(BOOL)animated {
+    [super setSelected:selected animated:animated];
+    // Configure the view for the selected state
+}
+
++ (CGFloat)heightForCellInTableView:(UITableView *)tableView rowAtIndexPath:(NSIndexPath *)indexPath dataSource:(id)dataSource {
+    return 0;
+}
+
+
++ (instancetype)cellForTableView:(UITableView *)tableView{
+    NSString *filePath = [NSString stringWithFormat:@"%s",__FILE__];
+    id cell = [super cellForTableView:tableView filePath:filePath];
+    return cell;
+}
+
+- (void)displayCellByDataSource:(id)dataSource rowAtIndexPath:(NSIndexPath *)indexPath target:(id)target{
+    [super displayCellByDataSource:dataSource rowAtIndexPath:indexPath target:target];
+}</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>11D4A4E0-BDEB-46DB-BB05-914AEEEE47C7</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>自定义Cell</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

@@ -18,6 +18,10 @@
     return 1;
 }
 
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
+    return 44;
+}
+
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
     &lt;#CellClass#&gt; *cell = [&lt;#CellClass#&gt; cellForTableView:tableView];
     [cell displayCellByDataSource:nil rowAtIndexPath:indexPath target:self];

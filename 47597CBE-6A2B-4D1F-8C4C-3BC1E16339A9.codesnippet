@@ -3,20 +3,29 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>@b</string>
+	<string>ImpStructure</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
 		<string>All</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>/* &lt;#注释#&gt; */
-@property (nonatomic, copy) void (^&lt;#blockName#&gt;)(&lt;#NSString *name#&gt;);</string>
+	<string>#pragma ViewController
+
+#pragma Model
+
+#pragma View
+
+#pragma Tool
+
+#pragma Manager</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>4FA71222-A9A0-4F23-B03C-AF9F10AF9845</string>
+	<string>47597CBE-6A2B-4D1F-8C4C-3BC1E16339A9</string>
 	<key>IDECodeSnippetLanguage</key>
-	<string>Xcode.SourceCodeLanguage.Generic</string>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>import结构</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>block属性</string>
+	<string>Import Structure</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>

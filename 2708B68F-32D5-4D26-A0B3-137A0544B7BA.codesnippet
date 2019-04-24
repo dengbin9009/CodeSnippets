@@ -3,20 +3,21 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>@b</string>
+	<string>#private</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
 		<string>All</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>/* &lt;#注释#&gt; */
-@property (nonatomic, copy) void (^&lt;#blockName#&gt;)(&lt;#NSString *name#&gt;);</string>
+	<string>pragma mark - Private Method</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>4FA71222-A9A0-4F23-B03C-AF9F10AF9845</string>
+	<string>2708B68F-32D5-4D26-A0B3-137A0544B7BA</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Generic</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>私有方法注释</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>block属性</string>
+	<string>Mark Private Method</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>

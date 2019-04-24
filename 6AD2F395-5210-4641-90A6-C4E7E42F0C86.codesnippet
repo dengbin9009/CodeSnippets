@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>bindView</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>#pragma mark - Data Binding
+- (void)bindViewModel {
+    [super bindViewModel];
+    self.viewModel = [[&lt;#ViewModelClass#&gt; alloc] init];
+    @weakify(self);
+    [_kvoController observe:self.viewModel keyPath:@"&lt;#keyPath#&gt;" options:NSKeyValueObservingOptionNew | NSKeyValueObservingOptionOld block:^(id observer, id object, NSDictionary *change) {
+        //@strongify(self);
+        NSString *model = (NSString *)change[NSKeyValueChangeNewKey];
+    }];
+    
+    [_kvoController observe:self.viewModel keyPath:@"finishTask" options:NSKeyValueObservingOptionNew | NSKeyValueObservingOptionOld block:^(id observer, id object, NSDictionary *change) {
+        @strongify(self);
+        [self.HUD hideAnimated:YES];
+    }];
+}</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>6AD2F395-5210-4641-90A6-C4E7E42F0C86</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Generic</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>数据绑定</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>bindViewModel</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

@@ -3,20 +3,22 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>@b</string>
+	<string>@v</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
 		<string>All</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>/* &lt;#注释#&gt; */
-@property (nonatomic, copy) void (^&lt;#blockName#&gt;)(&lt;#NSString *name#&gt;);</string>
+	<string>/* ViewModel */
+@property (nonatomic,strong) &lt;#TCBaseViewModel#&gt; *viewModel;</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>4FA71222-A9A0-4F23-B03C-AF9F10AF9845</string>
+	<string>D77CD2EF-CF9D-4FED-8B7A-64EE5997211F</string>
 	<key>IDECodeSnippetLanguage</key>
-	<string>Xcode.SourceCodeLanguage.Generic</string>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>viewModel属性</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>block属性</string>
+	<string>viewModel属性</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>
